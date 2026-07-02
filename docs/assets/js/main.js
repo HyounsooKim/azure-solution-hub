@@ -43,6 +43,18 @@ if (yearEl) {
 }
 
 /* ============================================================
+   Hero 통계 카운터
+   실제 콘텐츠 개수를 10단위로 올림하여 "N+" 형식으로 표시합니다.
+   (예: 솔루션 6개 → "10+", 워크샵 16개 → "20+")
+   ============================================================ */
+function setRoundedStat(id, count) {
+  const el = document.getElementById(id);
+  if (!el || !Number.isFinite(count) || count <= 0) return;
+  const rounded = Math.max(10, Math.ceil(count / 10) * 10);
+  el.textContent = rounded + '+';
+}
+
+/* ============================================================
    Dynamic solutions
    solutions/solutions.md 매니페스트를 읽어 솔루션 카드를 렌더링합니다.
    각 카드는 solution.html?slug=<slug> 상세 페이지로 연결됩니다.
@@ -122,6 +134,7 @@ if (yearEl) {
         return;
       }
       grid.innerHTML = items.map(renderCard).join('');
+      setRoundedStat('statSolutions', items.length);
     })
     .catch(() => {
       grid.innerHTML = '<div class="workshop-loading">솔루션 목록을 불러오지 못했습니다.</div>';
@@ -416,6 +429,7 @@ if (yearEl) {
       container.innerHTML = `<div class="workshop-loading">아직 등록된 워크샵이 없습니다. <code>docs/workshops.md</code> 파일에 GitHub 레포 URL을 추가하세요.</div>`;
       return;
     }
+    setRoundedStat('statWorkshops', allWs.length);
 
     await Promise.all(allWs.map(enrich));
     container.innerHTML = categories.map(renderCategory).join('');
