@@ -1,8 +1,370 @@
-<html>
-  <head>
-    <title>Test Page입니다.</title>
-  </head>
-  <body>
-    <H1>Hello World!</H1>
-  </body>  
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Korea Solution Hub</title>
+  <meta name="description" content="Microsoft Korea Solution Hub — 솔루션 설명 자료, 실습 워크샵, 최신 기능 업데이트를 한곳에서 만나보세요." />
+  <meta name="theme-color" content="#0067b8" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Microsoft Korea Solution Hub" />
+  <meta property="og:description" content="솔루션 설명 자료, 실습 워크샵, 최신 기능 업데이트를 한곳에서." />
+  <meta property="og:locale" content="ko_KR" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <span>Microsoft Korea · Solution Hub</span>
+      <span><a href="https://azure.microsoft.com/ko-kr/" target="_blank" rel="noopener">Azure 바로가기 →</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Microsoft Korea Solution Hub 홈">
+        <span class="logo" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span class="brand-text">
+          <span class="t1">Microsoft Korea</span>
+          <span class="t2">Solution Hub</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="주 메뉴">
+        <a href="#solutions">솔루션</a>
+        <a href="#workshops">워크샵</a>
+        <a href="#features">신규 기능</a>
+        <a href="#resources">리소스</a>
+        <a class="nav-cta" href="#contact">문의하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container">
+        <span class="eyebrow">Microsoft Korea · Solution Hub</span>
+        <h1>비즈니스를 혁신하는<br />Microsoft 솔루션을 한곳에서</h1>
+        <p>
+          솔루션 설명 자료부터 실습 워크샵, 최신 기능 업데이트까지 —
+          Microsoft Korea가 엄선한 콘텐츠로 클라우드와 AI 여정을 시작하세요.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#solutions">솔루션 살펴보기</a>
+          <a class="btn btn-ghost" href="#workshops">워크샵 신청하기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container">
+        <div class="stat">
+          <div class="num">50+</div>
+          <div class="label">솔루션 자료</div>
+        </div>
+        <div class="stat">
+          <div class="num">30+</div>
+          <div class="label">실습 워크샵</div>
+        </div>
+        <div class="stat">
+          <div class="num">매주</div>
+          <div class="label">신규 기능 업데이트</div>
+        </div>
+        <div class="stat">
+          <div class="num">100%</div>
+          <div class="label">한국어 지원</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="block" id="solutions">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Solutions</span>
+          <h2>솔루션 설명 자료</h2>
+          <p>산업과 시나리오별로 정리된 Microsoft 솔루션 아키텍처와 도입 가이드를 확인하세요.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
+              </div>
+              <span class="tag solution">Azure</span>
+              <h3>클라우드 마이그레이션</h3>
+              <p>온프레미스 워크로드를 Azure로 안전하게 이전하는 단계별 아키텍처와 모범 사례를 제공합니다.</p>
+              <a class="card-link" href="#">자세히 보기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M17 7l2-2M5 19l2-2"/></svg>
+              </div>
+              <span class="tag solution">AI</span>
+              <h3>Azure AI &amp; Copilot</h3>
+              <p>Azure OpenAI와 Copilot을 활용한 지능형 애플리케이션 구축 시나리오와 레퍼런스 아키텍처.</p>
+              <a class="card-link" href="#">자세히 보기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg>
+              </div>
+              <span class="tag solution">Security</span>
+              <h3>보안 &amp; 거버넌스</h3>
+              <p>Zero Trust 기반의 보안 아키텍처와 Microsoft Defender, Entra ID 통합 전략을 안내합니다.</p>
+              <a class="card-link" href="#">자세히 보기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M4 9h16M9 19V9"/></svg>
+              </div>
+              <span class="tag solution">Data</span>
+              <h3>데이터 &amp; 애널리틱스</h3>
+              <p>Microsoft Fabric과 Synapse를 활용한 통합 데이터 플랫폼 구성 및 분석 시나리오.</p>
+              <a class="card-link" href="#">자세히 보기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              </div>
+              <span class="tag solution">Modern Work</span>
+              <h3>Microsoft 365 &amp; 협업</h3>
+              <p>Teams, SharePoint, Copilot for Microsoft 365 기반의 생산성 향상 솔루션.</p>
+              <a class="card-link" href="#">자세히 보기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <span class="tag solution">App Innovation</span>
+              <h3>앱 현대화 &amp; DevOps</h3>
+              <p>컨테이너, Kubernetes, GitHub를 활용한 클라우드 네이티브 애플리케이션 현대화.</p>
+              <a class="card-link" href="#">자세히 보기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops -->
+    <section class="block alt" id="workshops">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Workshops</span>
+          <h2>실습 워크샵</h2>
+          <p>직접 따라 하며 배우는 핸즈온 워크샵으로 기술 역량을 빠르게 확보하세요.</p>
+        </div>
+
+        <!--
+          아래 컨테이너는 workshops.md 파일의 카테고리·워크샵 목록을 기반으로
+          JavaScript가 자동으로 채웁니다. data-source 속성으로 목록 파일을 지정합니다.
+        -->
+        <div id="workshopContainer" data-source="workshops.md" aria-live="polite">
+          <div class="workshop-loading">워크샵 목록을 불러오는 중입니다…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Features -->
+    <section class="block" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">What's New</span>
+          <h2>신규 기능 업데이트</h2>
+          <p>Microsoft 제품과 서비스의 최신 기능 소식을 가장 빠르게 전해 드립니다.</p>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item reveal">
+            <div class="date">2026.06.28</div>
+            <div class="fi-main">
+              <span class="tag new">New</span>
+              <h3>Azure AI Foundry 에이전트 서비스 정식 출시</h3>
+              <p>멀티 에이전트 오케스트레이션과 관리형 배포를 지원하는 Foundry Agent Service가 GA 되었습니다.</p>
+            </div>
+            <div class="fi-cta"><a class="card-link" href="#">릴리스 노트 <span class="arrow">→</span></a></div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="date">2026.06.20</div>
+            <div class="fi-main">
+              <span class="tag update">Update</span>
+              <h3>Microsoft Fabric 실시간 인텔리전스 강화</h3>
+              <p>이벤트 스트림 처리 성능이 향상되고 새로운 커넥터가 추가되었습니다.</p>
+            </div>
+            <div class="fi-cta"><a class="card-link" href="#">자세히 보기 <span class="arrow">→</span></a></div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="date">2026.06.12</div>
+            <div class="fi-main">
+              <span class="tag new">New</span>
+              <h3>Copilot in Azure — 자연어 리소스 관리</h3>
+              <p>자연어 명령으로 Azure 리소스를 조회하고 관리할 수 있는 Copilot 기능이 공개되었습니다.</p>
+            </div>
+            <div class="fi-cta"><a class="card-link" href="#">데모 보기 <span class="arrow">→</span></a></div>
+          </div>
+
+          <div class="feature-item reveal">
+            <div class="date">2026.06.05</div>
+            <div class="fi-main">
+              <span class="tag update">Update</span>
+              <h3>Microsoft Entra 조건부 액세스 정책 확장</h3>
+              <p>더욱 세분화된 위험 기반 액세스 제어와 신규 규정 준수 템플릿이 제공됩니다.</p>
+            </div>
+            <div class="fi-cta"><a class="card-link" href="#">가이드 보기 <span class="arrow">→</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="block alt" id="resources">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Resources</span>
+          <h2>더 많은 리소스</h2>
+          <p>학습과 도입을 돕는 공식 Microsoft 리소스를 활용하세요.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <h3>Microsoft Learn</h3>
+              <p>무료 학습 경로와 인증 과정으로 기술 역량을 체계적으로 키우세요.</p>
+              <a class="card-link" href="https://learn.microsoft.com/ko-kr/" target="_blank" rel="noopener">바로가기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18l6-6-6-6"/></svg>
+              </div>
+              <h3>Azure 아키텍처 센터</h3>
+              <p>검증된 레퍼런스 아키텍처와 디자인 패턴을 참고하세요.</p>
+              <a class="card-link" href="https://learn.microsoft.com/ko-kr/azure/architecture/" target="_blank" rel="noopener">바로가기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top"></div>
+            <div class="card-body">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+              </div>
+              <h3>Microsoft Tech Community</h3>
+              <p>전문가 및 커뮤니티와 지식을 나누고 최신 소식을 받아보세요.</p>
+              <a class="card-link" href="https://techcommunity.microsoft.com/" target="_blank" rel="noopener">바로가기 <span class="arrow">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="cta-band" id="contact">
+      <h2>함께 성장할 준비가 되셨나요?</h2>
+      <p>Microsoft Korea 팀이 여러분의 클라우드와 AI 여정을 지원합니다. 지금 문의하세요.</p>
+      <a class="btn btn-primary" href="mailto:solutionhub@microsoft.com">문의하기</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="#top" style="color:#fff;">
+            <span class="logo" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+            <span class="brand-text">
+              <span class="t1" style="color:#fff;">Microsoft Korea</span>
+              <span class="t2" style="color:#a19f9d;">Solution Hub</span>
+            </span>
+          </a>
+          <p>솔루션 설명 자료, 실습 워크샵, 최신 기능 업데이트를 한곳에서 제공하는 Microsoft Korea 공식 허브입니다.</p>
+        </div>
+        <div>
+          <h4>콘텐츠</h4>
+          <ul>
+            <li><a href="#solutions">솔루션</a></li>
+            <li><a href="#workshops">워크샵</a></li>
+            <li><a href="#features">신규 기능</a></li>
+            <li><a href="#resources">리소스</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>바로가기</h4>
+          <ul>
+            <li><a href="https://azure.microsoft.com/ko-kr/" target="_blank" rel="noopener">Azure</a></li>
+            <li><a href="https://www.microsoft.com/ko-kr/microsoft-365" target="_blank" rel="noopener">Microsoft 365</a></li>
+            <li><a href="https://learn.microsoft.com/ko-kr/" target="_blank" rel="noopener">Microsoft Learn</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>지원</h4>
+          <ul>
+            <li><a href="#contact">문의하기</a></li>
+            <li><a href="https://support.microsoft.com/ko-kr" target="_blank" rel="noopener">지원 센터</a></li>
+            <li><a href="https://www.microsoft.com/ko-kr/trust-center" target="_blank" rel="noopener">신뢰 센터</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Microsoft Corporation. All rights reserved.</span>
+        <span>
+          <a href="https://www.microsoft.com/ko-kr/privacy/privacystatement" target="_blank" rel="noopener">개인정보처리방침</a>
+          <a href="https://www.microsoft.com/ko-kr/legal/terms-of-use" target="_blank" rel="noopener">이용 약관</a>
+          <a href="https://www.microsoft.com/ko-kr/trademarks" target="_blank" rel="noopener">상표</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
